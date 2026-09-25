@@ -18,3 +18,11 @@ I chose the logical OR operator because it would flag an item if at least one of
 
 
 ________________________
+
+
+Describe the process of refactoring your code from Main into the TradingPost class. What are the benefits of moving this logic into its own class rather than keeping it all in the main method?
+
+To refactor the program, I declared the ArrayList as a private field inside the TradingPost class and created dedicated methods (addItem, removeItem, etc.) to handle inventory operations. This allowed Main to focus solely on instantiating the TradingPost object and calling its public methods.
+
+Making the inventory list private protects the data by preventing external code from altering it directly. Moving this logic into its own class establishes clear responsibilities: SupplyCrate manages individual item properties, TradingPost manages the item collection and enforces trading rules,
+and Main orchestrates tests and runs the program. This separation of concerns creates a clean, maintainable structure that makes the application easily scalable.

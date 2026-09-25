@@ -3,12 +3,14 @@ public class SupplyCrate {
     private String originRegion;
     private int baseValue;
     private boolean isContraband;
+    private boolean isReserved;
 
-    public SupplyCrate(String itemName, String originRegion, int baseValue, boolean isContraband){
+    public SupplyCrate(String itemName, String originRegion, int baseValue, boolean isContraband, boolean isReserved){
         this.itemName = itemName;
         this.originRegion = originRegion;
         this.baseValue = baseValue;
         this.isContraband = isContraband;
+        this.isReserved = isReserved;
     }
 
     public String getItemName(){
@@ -38,4 +40,7 @@ public class SupplyCrate {
     public void setContraband(boolean contraband){
         isContraband = contraband;
     }
+
+    public boolean isReserved(){return isReserved;}
+    public void setReserved(boolean reserved){ isReserved = reserved;}
 }
