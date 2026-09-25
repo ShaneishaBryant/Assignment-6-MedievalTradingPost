@@ -10,4 +10,32 @@ public class SupplyCrate {
         this.baseValue = baseValue;
         this.isContraband = isContraband;
     }
+
+    public String getItemName(){
+        return itemName;
+    }
+    public void setItemName(String itemName){
+        this.itemName = itemName;
+    }
+
+    public String getOriginRegion(){
+        return originRegion;
+    }
+    public void setOriginRegion(String originRegion){
+        this.originRegion = originRegion;
+    }
+
+    public int getBaseValue(){
+        return baseValue;
+    }
+    public void setBaseValue(int baseValue){
+        this.baseValue = baseValue;
+    }
+
+    public boolean isContraband(){
+        return isContraband;
+    }
+    public void setContraband(boolean contraband){
+        isContraband = contraband;
+    }
 }
